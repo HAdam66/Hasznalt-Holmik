@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.inputUpLoad {
+    width: 60%;
+    margin: 10px 0;
+}
+
+.selectBox, .imageBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+    margin: 10px 0;
+}
+
+.imageBox>input {
+    width: 10.7rem;
+}
