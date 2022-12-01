@@ -1,4 +1,34 @@
+.mainContainer {
+    display: flex;
+}
+
+.container {
+    display: flex;
+    flex-flow: wrap;
+    position: fixed;
+    overflow: scroll;
+    justify-content: space-evenly;
+    left: 20%;
+    width: 80%;
+    height: 100%;
+    background-color: aqua;
+}
+
+.box {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: white;
+}
+
 .image {
     width: 150px;
     height: 150px;
+}
+
+.list {
+    list-style: none;
 }

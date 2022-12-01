@@ -23,7 +23,7 @@ function UpLoad() {
                     <select onChange={(e) => setSize(e.target.value)}>
                         <option>--Please choose an option--</option>
                         <option value={"XXl"}>XXL</option>
-                        <option value={"Xl"}>Xl</option>
+                        <option value={"XL"}>XL</option>
                         <option value={"L"}>L</option>
                         <option value={"M"}>M</option>
                         <option value={"S"}>S</option>
@@ -39,6 +39,7 @@ function UpLoad() {
                         <option value={"fall"}>Fall</option>
                         <option value={"winter"}>Winter</option>
                         <option value={"spring"}>Spring</option>
+                        <option value={"every"}>Every</option>
                     </select>
                 </div>
                 <div className={UpLoadStyle.imageBox}>
