@@ -1,11 +1,11 @@
 import { Outlet } from "react-router-dom";
-import Navbar from "./Components/Navbar/Navbar";
 import './all.css';
+import SideBar from "./Components/SideBar/SideBar";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <SideBar />
       <Outlet />
     </div>
   );

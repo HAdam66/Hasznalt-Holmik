@@ -7,7 +7,6 @@ export function upLoad(type, material, color, size, season, inputRef) {
     console.log(inputRef.current.files[0])
     let file = inputRef.current.files[0];
     let newId = uuidv4();
-    console.log(file.name)
     imageUpLoad(newId, file)
     set(ref(db, `market/${newId}`), {
         type,
@@ -19,8 +18,8 @@ export function upLoad(type, material, color, size, season, inputRef) {
     })
 }
 
-export function download(setClothings) {
-    return onValue(ref(db, `market`), (snapshot) => {
+export function download(setClothings, url) {
+    return onValue(ref(db, `${url}`), (snapshot) => {
         setClothings([]);
         const data = snapshot.val();
         if(data !== null) {
@@ -28,5 +27,16 @@ export function download(setClothings) {
                 return setClothings((oldArray) => [...oldArray, clothing]);
             })
         }
+    })
+}
+
+export function addToBasket(data){
+    set(ref(db, `basket/${data.id}`), {
+        type: data.type,
+        material: data.material,
+        color: data.color,
+        size: data.size,
+        season: data.season,
+        id: data.id
     })
 }

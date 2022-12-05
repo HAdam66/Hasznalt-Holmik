@@ -1,6 +1,26 @@
 .container {
-    width: 20%;
-    background-color: blue;
+    display: flex;
+    flex-direction: column;
     position: fixed;
-    height: 100vh;
+    top:0;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 15%;
+    height: 100%;
+    background-color: beige;
+}
+
+.navLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 13rem;
+    height: 3rem;
+    text-decoration: none;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navLink:hover {
+    background-color: rgb(196, 196, 174);
 }

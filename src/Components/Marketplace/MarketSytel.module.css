@@ -5,13 +5,14 @@
 .container {
     display: flex;
     flex-flow: wrap;
-    position: fixed;
-    overflow: scroll;
+    position: relative;
     justify-content: space-evenly;
-    left: 20%;
-    width: 80%;
+    left: 15%;
+    width: 85%;
     height: 100%;
+    overflow-y: scroll;
     background-color: aqua;
+    padding-bottom: 20px;
 }
 
 .box {
@@ -20,8 +21,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
+    margin: 20px;
     background-color: white;
+    padding: 10px 0;
 }
 
 .image {
@@ -31,4 +33,5 @@
 
 .list {
     list-style: none;
+    padding: 0;
 }

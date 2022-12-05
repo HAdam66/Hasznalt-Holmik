@@ -9,7 +9,6 @@ function UpLoad() {
     const [color, setColor] = React.useState();
     const [size, setSize] = React.useState();
     const [season, setSeason] = React.useState();
-    const [image, setImage] = React.useState();
     
     return (
         <div className={UpLoadStyle.container}>
